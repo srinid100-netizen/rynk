@@ -1,0 +1,22 @@
+{
+  "name": "@rynk/layer2-strategy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "rynk.ai Layer 2 — Strategy Agent. Consumes audit findings, produces content strategy.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "test": "tsx tests/run.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@rynk/clients": "*",
+    "@rynk/core": "*",
+    "dotenv": "^16.4.5",
+    "zod": "^3.24.1"
+  }
+}

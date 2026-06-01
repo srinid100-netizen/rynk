@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+packages/*/dist/
+*.tsbuildinfo
+
+# Environment — never commit secrets
+.env
+
+# Generated pipeline output
+runs/
+
+# Excluded directories
+rynk-agent2/
+rynk-files/
+archive/
+
+# macOS
+.DS_Store
+.claude/

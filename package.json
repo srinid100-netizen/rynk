@@ -1,0 +1,27 @@
+{
+  "name": "rynk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "rynk.ai — AI-powered SEO platform (5-layer agent pipeline)",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "tsc -b",
+    "clean": "rm -rf packages/*/dist packages/*/tsconfig.tsbuildinfo",
+    "pipeline": "tsx packages/orchestrator/src/index.ts",
+    "layer1": "npm run start --workspace=@rynk/layer1-audit",
+    "layer2": "npm run start --workspace=@rynk/layer2-strategy",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

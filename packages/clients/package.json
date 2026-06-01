@@ -1,0 +1,16 @@
+{
+  "name": "@rynk/clients",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Per-client context configurations (ClientContext objects, typed and validated).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "@rynk/core": "*"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/clients" },
+    { "path": "./packages/layer1-audit" },
+    { "path": "./packages/layer2-strategy" },
+    { "path": "./packages/orchestrator" }
+  ]
+}

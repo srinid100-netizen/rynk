@@ -1,0 +1,19 @@
+{
+  "name": "@rynk/orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "End-to-end pipeline runner. Chains Layer 1 → 2 → 3 → 4 → 5. (placeholder)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "tsx src/index.ts",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "@rynk/clients": "*",
+    "@rynk/core": "*",
+    "@rynk/layer1-audit": "*",
+    "@rynk/layer2-strategy": "*"
+  }
+}
